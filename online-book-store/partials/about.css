@@ -1,0 +1,75 @@
+.text-overlay {
+    position: absolute;
+    top: 60%;
+    left: 10%;
+    transform: translateY(-50%);
+    color: brown;
+}
+
+.custom-width {
+    max-width: 400px;
+    /* Limit the maximum width */
+    width: 100%;
+    /* Make it responsive */
+}
+
+.custom-btn {
+    font-size: 1.3rem;
+}
+
+@media (max-width: 468px) {
+    .custom-btn {
+        width: 50px;
+        height: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .custom-btn {
+        font-size: 0.3rem;
+        display: inline-block;
+        text-align: center;
+    }
+}
+
+@media (max-width: 468px) {
+    .custom-width {
+        width: 100px;
+        height: 100px;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .text-overlay {
+        left: 5%;
+        top: 40%;
+        transform: translateY(-40%);
+    }
+
+    .text-overlay h1 {
+        font-size: 1.0rem;
+        font-weight: bold;
+    }
+
+    .text-overlay p {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .text-overlay {
+        left: 5%;
+        top: 30%;
+        transform: translateY(-30%);
+    }
+
+    .text-overlay h1 {
+        font-size: 0.7rem;
+        font-weight: bold;
+    }
+
+    .text-overlay p {
+        font-size: 0.5rem;
+    }
+}
